@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="最后的最后的最后">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.24110979490953 0.291822568049567 0.103607705427784"
+        rpy="0 0 0" />
+      <mass
+        value="4.4265066175815" />
+      <inertia
+        ixx="0.0417916522581897"
+        ixy="0.00672032992907354"
+        ixz="3.69122969213001E-07"
+        iyy="0.0177326943238271"
+        iyz="1.00168760077157E-07"
+        izz="0.055291782670404" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="f-b">
+    <inertial>
+      <origin
+        xyz="0.00232543214158942 0.040761977585475 0.248910014984453"
+        rpy="0 0 0" />
+      <mass
+        value="7.93755284995886" />
+      <inertia
+        ixx="0.128811100574651"
+        ixy="-3.47944796585953E-09"
+        ixz="4.49420460872305E-09"
+        iyy="0.293446531196313"
+        iyz="-2.31633682786989E-06"
+        izz="0.165800196892633" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/f-b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/f-b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f-b"
+    type="prismatic">
+    <origin
+      xyz="0.2077 0.42305 0.181"
+      rpy="1.5708 0 0.25473" />
+    <parent
+      link="base_link" />
+    <child
+      link="f-b" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.2"
+      upper="0.1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="l-r">
+    <inertial>
+      <origin
+        xyz="0.0735939876093558 0.0342987919570049 0.282831564687026"
+        rpy="0 0 0" />
+      <mass
+        value="7.18694221364729" />
+      <inertia
+        ixx="0.131255772845775"
+        ixy="-1.10546393219946E-10"
+        ixz="1.53790058126605E-06"
+        iyy="0.255549654916926"
+        iyz="1.96021269348277E-05"
+        izz="0.128346911633879" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-r.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-r.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l--r"
+    type="prismatic">
+    <origin
+      xyz="-0.1775 0.079 0.35"
+      rpy="0 1.5708 0" />
+    <parent
+      link="f-b" />
+    <child
+      link="l-r" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.2"
+      upper="0.1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="claw-roll">
+    <inertial>
+      <origin
+        xyz="-0.0381498375439622 0.164494797429646 -0.306552876405141"
+        rpy="0 0 0" />
+      <mass
+        value="0.810010929466262" />
+      <inertia
+        ixx="0.0400940649123933"
+        ixy="2.41949992283745E-05"
+        ixz="-4.50428130335359E-05"
+        iyy="0.0312370200213338"
+        iyz="0.016460500144677"
+        izz="0.00936534310020475" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/claw-roll.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/claw-roll.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="claw-roll"
+    type="revolute">
+    <origin
+      xyz="-0.095 0.102 0.4696"
+      rpy="1.0786 0 0" />
+    <parent
+      link="l-r" />
+    <child
+      link="claw-roll" />
+    <axis
+      xyz="0 0.47256 -0.8813" />
+    <limit
+      lower="-1.57"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="claw-lift">
+    <inertial>
+      <origin
+        xyz="0.573066062046741 0.179487836867311 1.16603105620362"
+        rpy="0 0 0" />
+      <mass
+        value="1.22007548020093" />
+      <inertia
+        ixx="0.00294757862136333"
+        ixy="0.000466412129818511"
+        ixz="-5.82231471563978E-08"
+        iyy="0.00127780456123567"
+        iyz="2.12117265150278E-07"
+        izz="0.00377057018482898" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/claw-lift.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/claw-lift.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="claw-lift"
+    type="prismatic">
+    <origin
+      xyz="0.08794 -0.69958 0.035636"
+      rpy="3.0073 -0.47497 1.8581" />
+    <parent
+      link="claw-roll" />
+    <child
+      link="claw-lift" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.5"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left-claw">
+    <inertial>
+      <origin
+        xyz="0.598000912831375 0.329375717352144 1.04299128665714"
+        rpy="0 0 0" />
+      <mass
+        value="0.321917998526229" />
+      <inertia
+        ixx="0.000949924691069615"
+        ixy="9.89963940288547E-05"
+        ixz="-7.93806809192272E-05"
+        iyy="0.000595519535464749"
+        iyz="-2.06811147189091E-05"
+        izz="0.000632016797269796" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/left-claw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/left-claw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left-claw"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="claw-lift" />
+    <child
+      link="left-claw" />
+    <axis
+      xyz="-0.96773 -0.25199 0" />
+    <limit
+      lower="0"
+      upper="0.02"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right-claw">
+    <inertial>
+      <origin
+        xyz="0.478195656747067 0.298181503848523 1.04299128599104"
+        rpy="0 0 0" />
+      <mass
+        value="0.321917997107331" />
+      <inertia
+        ixx="0.00094992468254873"
+        ixy="9.89964000404664E-05"
+        ixz="7.93806818853637E-05"
+        iyy="0.000595519540897754"
+        iyz="2.06811097039198E-05"
+        izz="0.000632016803173059" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/right-claw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/right-claw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right-claw"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="claw-lift" />
+    <child
+      link="right-claw" />
+    <axis
+      xyz="-0.96773 -0.25199 0" />
+    <limit
+      lower="-0.02"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="store">
+    <inertial>
+      <origin
+        xyz="0.217318817478146 0.238698485235408 0.802094941846696"
+        rpy="0 0 0" />
+      <mass
+        value="7.66969906694019" />
+      <inertia
+        ixx="0.172367193517513"
+        ixy="0.00312782258273803"
+        ixz="0.000367029541851867"
+        iyy="0.162376195331769"
+        iyz="2.13874608519724E-05"
+        izz="0.30089719748078" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/store.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/store.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="store-lift"
+    type="prismatic">
+    <origin
+      xyz="-0.0070604 -0.26 -0.1301"
+      rpy="1.5708 -1.3161 3.1416" />
+    <parent
+      link="l-r" />
+    <child
+      link="store" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.3"
+      upper="0.1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="l-gate">
+    <inertial>
+      <origin
+        xyz="0.174104216461773 0.543236336469607 0.772085060901818"
+        rpy="0 0 0" />
+      <mass
+        value="0.0881827385868019" />
+      <inertia
+        ixx="4.32594608889274E-05"
+        ixy="-0.000113943348812263"
+        ixz="2.16974091277153E-07"
+        iyy="0.000451180970636848"
+        iyz="-8.33272880962757E-07"
+        izz="0.000470305288650628" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-gate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.92 0.04 0.02 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-gate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-gate"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="store" />
+    <child
+      link="l-gate" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="r-gate">
+    <inertial>
+      <origin
+        xyz="0.327701660124245 -0.0466432368757868 0.772085055238923"
+        rpy="0 0 0" />
+      <mass
+        value="0.0881827385868016" />
+      <inertia
+        ixx="4.32594608889273E-05"
+        ixy="-0.000113943348812262"
+        ixz="-2.16974091276088E-07"
+        iyy="0.000451180970636846"
+        iyz="8.33272880963198E-07"
+        izz="0.000470305288650627" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/r-gate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.92 0.04 0.02 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/r-gate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r-gate"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="store" />
+    <child
+      link="r-gate" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="f-gate">
+    <inertial>
+      <origin
+        xyz="-0.102049992558201 0.156391913051368 0.755035095669147"
+        rpy="0 0 0" />
+      <mass
+        value="0.0945827385868017" />
+      <inertia
+        ixx="0.000561323653182042"
+        ixy="0.000142390294710613"
+        ixz="8.36575444040851E-07"
+        iyy="5.15609983428756E-05"
+        iyz="2.17834038404111E-07"
+        izz="0.000587036334975747" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/f-gate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.92 0.04 0.02 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/f-gate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="f-gate"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="store" />
+    <child
+      link="f-gate" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="l-bank">
+    <inertial>
+      <origin
+        xyz="-0.0790111966307153 0.0381081298689115 -1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0291728205433942" />
+      <inertia
+        ixx="1.9151175753981E-05"
+        ixy="3.15592503409E-05"
+        ixz="-5.9292306307801E-21"
+        iyy="6.936286587005E-05"
+        iyz="5.50571415715295E-21"
+        izz="8.07346228124592E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-bank.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.92 0.04 0.02 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/l-bank.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l-bank"
+    type="revolute">
+    <origin
+      xyz="0.3845 0.33211 0.99894"
+      rpy="0.059003 -0.20472 -0.028058" />
+    <parent
+      link="store" />
+    <child
+      link="l-bank" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.32"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="r-bank">
+    <inertial>
+      <origin
+        xyz="-0.0777843182664049 0.0405536507228884 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.029172820543394" />
+      <inertia
+        ixx="2.11674775921455E-05"
+        ixy="3.30630115394134E-05"
+        ixz="2.5410988417629E-20"
+        iyy="6.73465640318848E-05"
+        iyz="-5.0821976835258E-21"
+        izz="8.07346228124587E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/r-bank.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.92 0.04 0.02 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://最后的最后的最后/meshes/r-bank.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r-bank"
+    type="revolute">
+    <origin
+      xyz="0.40868 0.23919 0.99893"
+      rpy="0.059003 -0.20472 -0.028058" />
+    <parent
+      link="store" />
+    <child
+      link="r-bank" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.32"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
