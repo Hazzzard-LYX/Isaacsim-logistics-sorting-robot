@@ -1,5 +1,9 @@
 # Isaacsim Logistics Sorting Robot
 
+<p align="center">
+  <img src="assets/banner.png" alt="Isaac Sim Logistics Sorting Robot" width="100%">
+</p>
+
 基于 Isaac Sim 的机电一体化课程设计物流任务仿真项目。项目包含物流比赛场地生成、真实机器人 URDF/STL 模型导入、A* 路径规划、取货动作、分拣挡板动作、卸货动作，以及独立的 2D LiDAR 已知地图定位原型。
 
 ## 功能概览
