@@ -10,7 +10,8 @@
 
 完整视频在release可查看
 
-[View demo video in Releases](../../releases/tag/v1.0demo)
+[[View demo video in Releases](../../releases/tag/v1.0demo)
+](https://github.com/Hazzzard-LYX/Isaacsim-logistics-sorting-robot/releases/tag/V1.0-demo)
 
 ## 功能概览
 
